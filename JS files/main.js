@@ -1,5 +1,5 @@
 import { getData } from "./api.js"
-import { filtre } from "./rende.js"
+import { filtre, searchByName } from "./rende.js"
 
 const section = document.getElementById('card')
 let data ;
@@ -29,3 +29,4 @@ section.innerHTML = data.map(element => {
 }).join("");
 }
 filtre()
+searchByName()
